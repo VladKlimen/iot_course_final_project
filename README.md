@@ -1,4 +1,4 @@
-# IoT Project – Smart Fitness Bracelet and Exercise Repetition Counter
+Smart Fitness Bracelet and Exercise Repetition Counter
 This course project is an Arduino-based wrist bracelet that tracks your progress during training. It supports various exercises, including running and walking (step counter), squats, abdominal workouts, jumps, weight exercises, and other gym routines.
 
 <p align="center">
