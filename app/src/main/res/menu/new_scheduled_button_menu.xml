@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_add_new_training"
+        android:title="@string/schedule_new_training"
+        android:icon="@drawable/baseline_add_24" />
+    <item
+        android:id="@+id/action_add_existing_training"
+        android:title="@string/schedule_existing_training"
+        android:icon="@drawable/baseline_add_24" />
+</menu>

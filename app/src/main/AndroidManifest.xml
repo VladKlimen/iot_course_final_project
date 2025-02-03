@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_custom"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Iot_project"
+        tools:targetApi="31">
+        <activity
+            android:name=".InitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExerciseTrainModelActivity"
+            android:exported="false"
+            android:label="Exercise Calibration" />
+        <activity
+            android:name=".ExercisesActivity"
+            android:exported="false"
+            android:label="@string/exercises" />
+        <activity
+            android:name=".TrainingsActivity"
+            android:exported="false"
+            android:label="@string/trainings" />
+        <activity
+            android:name=".SetActivity"
+            android:exported="false"
+            android:label="@string/new_set" />
+        <activity
+            android:name=".ExerciseIconsActivity"
+            android:exported="false"
+            android:label="@string/exercises" />
+        <activity
+            android:name=".ExerciseActivity"
+            android:exported="false"
+            android:label="@string/new_exercise" />
+        <activity
+            android:name=".TrainingActivity"
+            android:exported="false"
+            android:label="@string/new_training" />
+        <activity
+            android:name=".DevicesActivity"
+            android:exported="false"
+            android:label="@string/devices_connection" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".RepetitionsCounterActivity"
+            android:exported="false"
+            android:label="Your Gym Coach"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Iot_project.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+
+        <service android:name=".SerialService" />
+    </application>
+
+</manifest>

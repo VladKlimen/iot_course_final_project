@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_scheduled">
+
+    <fragment
+        android:id="@+id/nav_scheduled"
+        android:name="com.example.iot_project.ui.scheduled.ScheduledTrainingsFragment"
+        android:label="@string/scheduled_trainings"
+        tools:layout="@layout/fragment_scheduled_trainings" >
+        <action
+            android:id="@+id/action_nav_scheduled_to_newTrainingActivity"
+            app:destination="@id/newTrainingActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_exercises"
+        android:name="com.example.iot_project.ui.exercises.ExercisesFragment"
+        android:label="@string/menu_exercises"
+        tools:layout="@layout/fragment_exercises" >
+        <action
+            android:id="@+id/action_nav_exercises_to_exerciseActivity"
+            app:destination="@id/exerciseActivity" />
+        <action
+            android:id="@+id/action_nav_exercises_to_newExerciseActivity"
+            app:destination="@id/newExerciseActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_trainings"
+        android:name="com.example.iot_project.TrainingsFragment"
+        android:label="@string/trainings"
+        tools:layout="@layout/fragment_trainings" >
+        <action
+            android:id="@+id/action_trainingsFragment_to_newTrainingActivity"
+            app:destination="@id/newTrainingActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_statistics"
+        android:name="com.example.iot_project.ui.statistics.StatisticsFragment"
+        android:label="@string/menu_statistics"
+        tools:layout="@layout/fragment_statistics" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.iot_project.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.iot_project.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.iot_project.ui.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/exerciseActivity"
+        android:name="com.example.iot_project.ExerciseActivity"
+        android:label="activity_exercise"
+        tools:layout="@layout/activity_exercise" />
+    <activity
+        android:id="@+id/newExerciseActivity"
+        android:name="com.example.iot_project.ExerciseActivity"
+        android:label="activity_new_exercise"
+        tools:layout="@layout/activity_exercise" />
+    <activity
+        android:id="@+id/newTrainingActivity"
+        android:name="com.example.iot_project.TrainingActivity"
+        android:label="activity_new_training"
+        tools:layout="@layout/activity_training" />
+    <activity
+        android:id="@+id/setActivity"
+        android:name="com.example.iot_project.SetActivity"
+        android:label="activity_set"
+        tools:layout="@layout/activity_set" />
+</navigation>

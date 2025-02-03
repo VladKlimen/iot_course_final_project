@@ -1,0 +1,10 @@
+﻿name;description;image;height;threshold;prominence
+Run;Running;run;11;0.0014;0.8333333
+Walk;Walking;walk;11;0.0014;0.8333333
+Front Hand;Front Handing;weightlifting_8;11;0.0014;3
+Back Hand;Back Handing;weightlifting_11;11;0.1;1
+Shoulders;Smouldering;exercise_14;13;0.001;6
+Chest;Christening;weightlifting_1;12;0.0014;6
+Abs;Abstaining;exercise_13;12;0.0014;4
+Pull Down;Pull Downing;weightlifting_9;10;0.0014;1
+Squats;Squats;weightlifting_3;11;0.0014;0.8333333

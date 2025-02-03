@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_scheduled"
+            android:icon="@drawable/scheduled"
+            android:title="@string/menu_scheduled" />
+        <item
+            android:id="@+id/nav_exercises"
+            android:icon="@drawable/exercise"
+            android:title="@string/menu_exercises" />
+        <item
+            android:id="@+id/nav_trainings"
+            android:icon="@drawable/training"
+            android:title="@string/menu_trainings" />
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/statistics"
+            android:title="@string/menu_statistics" />
+    </group>
+</menu>
